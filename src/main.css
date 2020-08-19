@@ -2,8 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './app/styles/base.css';
-@import './app/styles/feed.css';
-@import './app/styles/post.css';
 
 body {
   overflow-x: hidden;
