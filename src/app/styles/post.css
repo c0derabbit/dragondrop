@@ -1,0 +1,40 @@
+article {
+  a {
+    @apply text-green-700 underline transition duration-300;
+
+    &:hover,
+    &:focus {
+      @apply text-green-900;
+    }
+  }
+
+  ul {
+    @apply list-disc pl-6;
+  }
+
+  li {
+    @apply my-1;
+  }
+
+  img {
+    opacity: 0;
+    transition: opacity .5s ease;
+    cursor: zoom-in;
+    @apply my-3;
+  }
+
+  .flex,
+  .grid {
+    img {
+      @apply m-0;
+    }
+  }
+}
+
+#modal {
+  cursor: zoom-out;
+
+  @media (max-width: 800px) {
+    display: none !important;
+  }
+}

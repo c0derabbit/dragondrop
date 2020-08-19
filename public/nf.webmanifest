@@ -1,0 +1,21 @@
+{
+  "name": "Pictures of our lives",
+  "short_name": "pix",
+  "description": "Pictures of places we’ve been, things we’ve done…",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#fafafa",
+  "background_color": "#fafafa"
+}
