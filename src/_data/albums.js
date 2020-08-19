@@ -3,9 +3,11 @@ const path = require('path')
 
 function getAlbums() {
   const dirs = fs.readdirSync(path.join(__dirname, '..', '/photos/'))
+    .filter(name => name !== '.DS_Store')
+
   return dirs.map(dir => {
     const photos = fs.readdirSync(path.join(__dirname, '..', `/photos/${dir}`))
-      .filter(file => /(jpe?g|png|gif)/.test(file))
+      .filter(file => !/.json$/.test(file))
     let title = dir
     let description = ''
 

@@ -18,7 +18,7 @@
     for (var i = 0; i < entries.length; i++) {
       var entry = entries[i]
 
-      if (i < 2 || entry.isIntersecting) loadImage(entry)
+      if (i < 6 || entry.isIntersecting) loadImage(entry)
     }
   }
 
