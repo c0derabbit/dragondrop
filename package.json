@@ -8,10 +8,11 @@
     "build:11ty": "eleventy --quiet",
     "build:rollup": "rollup -c",
     "clean": "rimraf dist",
-    "dev": "NODE_ENV=dev npm-run-all clean build:* -p dev:*",
+    "dev": "yarn preprocess && NODE_ENV=dev npm-run-all clean build:* -p dev:*",
     "dev:11ty": "eleventy --serve --quiet",
     "dev:rollup": "rollup -c -w",
     "lint": "standard --fix",
+    "preprocess": "sh ./preprocess-images.sh",
     "test": "yarn lint && jest"
   },
   "devDependencies": {
